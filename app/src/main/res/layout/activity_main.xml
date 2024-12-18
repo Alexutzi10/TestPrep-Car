@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/surugiu_george_alexandru_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"/>
+
+    <Button
+        android:id="@+id/surugiu_george_alexandru_bttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sterge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surugiu_george_alexandru_fab"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/surugiu_george_alexandru_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bafta"
+        app:layout_constraintStart_toEndOf="@id/surugiu_george_alexandru_fab"
+        app:layout_constraintTop_toTopOf="@id/surugiu_george_alexandru_fab"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/surugiu_george_alexandru_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/surugiu_george_alexandru_tv"
+        app:layout_constraintTop_toTopOf="@id/surugiu_george_alexandru_fab"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="4dp"
+        android:minHeight="48dp"
+        android:entries="@array/spinner_values"/>
+
+    <EditText
+        android:id="@+id/surugiu_george_alexandru_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/values_only"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/surugiu_george_alexandru_spinner"
+        app:layout_constraintTop_toTopOf="@id/surugiu_george_alexandru_fab"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

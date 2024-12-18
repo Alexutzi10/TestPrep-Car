@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarTest</string>
+    <string name="sterge">Sterge</string>
+    <string name="bafta">Bafta</string>
+    <string name="values_only">Insert car brand</string>
+    <string-array name="spinner_values">
+        <item>Ferrari</item>
+        <item>Porsche</item>
+        <item>Lamborghini</item>
+    </string-array>
+</resources>
